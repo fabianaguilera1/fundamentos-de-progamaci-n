@@ -1,0 +1,20 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main ()
+{
+	float lado,area=0;
+	cout<<"calcular el area del cuadrado"<<endl;
+	cout<<"digite lado"; cin>>lado;
+	
+
+	
+	area = (lado*lado);
+
+	cout<<"el area del cuadrado es:"<<area<<endl;
+
+
+	getch();
+}

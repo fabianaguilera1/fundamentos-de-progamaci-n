@@ -1,0 +1,18 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{ int n, num, suma=0;
+	cout<<"digite la cantidad de numeros que desea sumar:"; 
+	cin>>n;
+	 
+	 for(int i=1; i<=n; i++)
+     {   cout<<"introduzca numero:";
+	     cin>>num;
+	     suma=suma+num;
+	 }
+	  
+	 cout<<"la suma es:"<<suma<<endl;
+	getch();
+}

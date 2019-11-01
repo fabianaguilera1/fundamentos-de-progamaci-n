@@ -1,0 +1,51 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+{float hemoglobina;
+int op;
+  cout<<"-----------MENU-----------"<<endl;
+  cout<<"QUE EDAD TIENE LA PERSONA"<<endl;
+    cout<<"1. 0-1 mes"<<endl;
+    cout<<"2. 1-6 mes"<<endl;  
+	cout<<"3. 6-12 mes"<<endl; 
+	cout<<"4. 1-5 años"<<endl;
+	cout<<"5. 5-10 años"<<endl;
+	cout<<"6. 10-15 años"<<endl;
+	cout<<"7. mujer mayor a 15 años"<<endl;
+	cout<<"8. hombre mayor a 15 años"<<endl;
+	cin>>op;
+
+	switch (op){ 
+	case 1:cout<<"digite la hemoglobina en g/%:"; cin>>hemoglobina; 
+	if(hemoglobina<=13.00){cout<<"positivo"<<endl;}else{cout<<"negativo";};break;
+
+	case 2:cout<<"digite la hemoglobina en g/%:"; cin>>hemoglobina; 
+	if(hemoglobina<=10.00){cout<<"positivo"<<endl;}else{cout<<"negativo";};break;
+	
+	case 3:cout<<"digite la hemoglobina en g/%:"; cin>>hemoglobina; 
+	if(hemoglobina<=11.00){cout<<"positivo"<<endl;}else{cout<<"negativo";};break;
+
+	case 4:cout<<"digite la hemoglobina en g/%:"; cin>>hemoglobina; 
+	if(hemoglobina<=11.00){cout<<"positivo"<<endl;}else{cout<<"negativo";};break;
+
+	case 5:cout<<"digite la hemoglobina en g/%:"; cin>>hemoglobina; 
+	if(hemoglobina<=12.00){cout<<"positivo"<<endl;}else{cout<<"negativo";};break;
+
+	case 6:cout<<"digite la hemoglobina en g/%:"; cin>>hemoglobina; 
+	if(hemoglobina<=13.00){cout<<"positivo"<<endl;}else{cout<<"negativo";};break;
+
+	case 7:cout<<"digite la hemoglobina en g/%:"; cin>>hemoglobina; 
+	if(hemoglobina<=12.00){cout<<"positivo"<<endl;}else{cout<<"negativo";};break;
+
+	case 8:cout<<"digite la hemoglobina en g/%:"; cin>>hemoglobina; 
+	if(hemoglobina<=14.00){cout<<"positivo"<<endl;}else{cout<<"negativo";};break;
+	}
+	
+
+
+
+getch();
+}

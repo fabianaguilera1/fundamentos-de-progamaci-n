@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+	int numeros[100],n;
+	int menor=9999;
+	cout<<"ingrese numero de elementos del vector:"; cin>>n;
+
+	 
+	for( int i=0;i<n; i++)
+	{ cout<<"digite un elemento:"; cin>> numeros[i];
+	
+	if(numeros [i]<menor){ numeros[i]=menor;}}
+	cout<<"el elemento menor es:"<<menor<<endl;
+
+getch();
+}

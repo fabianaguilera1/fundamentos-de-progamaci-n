@@ -1,0 +1,35 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+{int dia, mes;
+ cout<<"digite el dia:"; cin>>dia;
+ cout<<"digite el numero de mes 1-12:"; cin>>mes;
+    if(1<=dia && dia<=31 && 1<=mes&&mes<=12)
+	{   if(21>=dia && dia<=30 && mes==9){cout<<"es primavera"<<endl;}
+	    if(1>=dia && dia<=30 && mes==10){cout<<"es primavera"<<endl;}
+	    if(1>=dia && dia<=30 && mes==11){cout<<"es primavera"<<endl;}
+		if(1>=dia && dia<=21 && mes==12){cout<<"es primavera"<<endl;}
+
+		if(21>=dia && dia<=30 && mes==12){cout<<"es verano"<<endl;}
+		if(1>=dia && dia<=30 && mes==1){cout<<"es verano"<<endl;}
+		if(1>=dia && dia<=30 && mes==2){cout<<"es verano"<<endl;}
+		if(1>=dia && dia<=21 && mes==3){cout<<"es verano"<<endl;}
+
+		if(21>=dia && dia<=30 && mes==3){cout<<"es otoño"<<endl;}
+		if(1>=dia && dia<=30 && mes==4){cout<<"es otoño"<<endl;}
+		if(1>=dia && dia<=30 && mes==5){cout<<"es otoño"<<endl;}
+		if(1>=dia && dia<=21 && mes==6){cout<<"es otoño"<<endl;}
+
+		if(21>=dia && dia<=30 && mes==6){cout<<"es invierno"<<endl;}
+		if(1>=dia && dia<=30 && mes==7){cout<<"es invierno"<<endl;}
+		if(1>=dia && dia<=30 && mes==8){cout<<"es invierno"<<endl;}
+		if(1>=dia && dia<=21 && mes==9){cout<<"es invierno"<<endl;}		
+	}
+	     else{cout<<"fecha invalida"<<endl;}
+
+
+getch();
+}

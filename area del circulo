@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main ()
+{
+	float radio,area=0;
+	cout<<"calcular el area del circulo"<<endl;
+	cout<<"digite radio"; cin>>radio;
+	
+
+	
+	area = (radio*radio*3.14);
+
+	cout<<"el area del circulo es:"<<area<<endl;
+
+
+	getch();
+}
+
