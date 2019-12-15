@@ -1,0 +1,39 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h" // Esta libreria es para limpiar pantalla
+
+#define MAX 100
+
+using namespace std;
+
+void cargar (double a[], int tam);
+void mostrar (double a[], int tam);
+double promedio(double a[], int tam);
+void Burbuja(double a[],int tam);
+bool BusquedaLineal(double a[],int b,int tam, int &pos);
+
+int main()
+{
+	double vec[MAX],prom,k;
+	int tam,n,pos=0,op;
+	cout<<"ingrese el numero de elementos";
+	cin>>n;
+
+	do{
+		cout<<"------Menu-----"<<endl;
+		cout<<"1. Cargar el vector"<<endl;
+		cout<<"2. Mostrar el vector"<<endl;
+		cout<<"3. Promedio "<<endl;
+		cout<<"4. Burbuja"<<endl;
+		cout<<"5. Busqueda lineal"<<endl;
+		cout<<"0. Salir"<<endl;
+		cin>>op;
+		switch(op){
+		case 1: cargar (vec,n);break;
+		case 2: mostrar (vec,n); break;
+		case 3:cout<<"el promedio del vector es:"<< promedio (vec,n);break;
+		case 4: Burbuja (vec,n);break;
+		case 5: 
+			cout<<"Ingrese el valor a buscar: ";
+			cin>>k;
