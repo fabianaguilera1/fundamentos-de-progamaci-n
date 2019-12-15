@@ -1,0 +1,33 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+ float perimetro (float r);
+ float volumen (float r);
+ float area (float r);
+ 
+ void main()
+ { float r;
+ int op;
+
+   do{cout<<"------MENU------"<<endl;
+     cout<<"1.calculo del perimetro"<<endl;
+     cout<<"2.calculo volumen"<<endl;
+     cout<<"3.calculo area"<<endl;
+     cout<<"4.SALIR"<<endl;
+     cin>>op;
+     switch (op)
+	   {case 1:cout<<perimetro(r)<<endl;
+        case 2:cout<<volumen(r)<<endl;
+	    case 3:cout<<area(r)<<endl;
+	    case 4:cout<<"salir"<<endl;break;
+	    default:cout<<"error"<<endl;}}while(op=!4);
+     getch();
+	}
+
+ float perimetro(float r) {return 2*3.1416*r;}
+ 
+ float volumen(float r)   {return (4*3.1416*r*r*r)/3;}
+
+ float area(float r)      {return 3.1416*r*r;}
