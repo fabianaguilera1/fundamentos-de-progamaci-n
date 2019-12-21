@@ -1,0 +1,67 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void main()
+{
+    string a,b;
+    int v[100],tama,i=0,j=0;
+    string opcion;
+    string c,d;
+    do
+    {
+
+        cout<<"A=Amarillo"<<endl;
+        cout<<"a=Azul"<<endl;
+        cout<<"V=Verde"<<endl;
+        cout<<"R=Rojo"<<endl;
+        cout<<"Indique que color desea"<<endl;
+        cin>>a;
+        b=b+a[0];
+        cout<<"G=Grande"<<endl;
+        cout<<"M=Mediano"<<endl;
+        cout<<"P=Peque"<<endl;
+        cout<<"Indique que talla desea"<<endl;
+        cin>>c;
+        d=d+c[0];
+      
+        cout<<"Indique que cantidad que desea"<<endl;
+        cin>>v[i];
+        cout<<"Desea continuar con su compra?"<<endl;
+        cout<<"s/n"<<endl;
+        cin>>opcion;
+        i++;
+    }
+    while(opcion!="n");
+
+    int aux=v[0],pos=0;
+     for(i=0;i<b.length();i++)
+    {
+        if(aux<v[i])
+        {
+            aux=v[i];
+            pos=i;
+        }
+
+    }
+
+  cout<<"A=Amarillo"<<endl;
+        cout<<"a=Azul"<<endl;
+        cout<<"V=Verde"<<endl;
+        cout<<"R=Rojo"<<endl;
+                cout<<"El color que mas pidieron en una sola compra es"<<endl;
+
+    cout<<b[pos]<<endl;
+      cout<<"G=Grande"<<endl;
+        cout<<"M=Mediano"<<endl;
+        cout<<"P=Peque"<<endl;
+        cout<<"La talla que mas pidieron en una sola compra es la"<<endl;
+    cout<<d[pos]<<endl;
+    cout<<"La cantidad de lo vendido es"<<endl;
+    cout<<v[pos]<<endl;
+
+     getch();
+}
